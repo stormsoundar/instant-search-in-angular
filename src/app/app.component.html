@@ -1,0 +1,10 @@
+<section>
+  <h5>Dynamic search results</h5>
+  <input name="dynamicSearch" [(ngModel)]="searchInput" type="text" placeholder="Search programming languages" size="50">
+  <article>
+    <h6>Result</h6>
+    <ul>
+      <li *ngFor="let programmingLanguage od programmingLanguages | search: searchInput">{{ programmongLanguage }}</li>
+    </ul>
+  </article>
+</section>
